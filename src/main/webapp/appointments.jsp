@@ -71,7 +71,7 @@
                                 <a href="updateAppointment.jsp?id=<%= a.getId() %>" class="btn btn-sm btn-warning">Update</a>
                                 <a href="DeleteAppointmentServlet?id=<%= a.getId() %>"
                                    class="btn btn-sm btn-danger"
-                                   onclick="return confirm('Cancel this appointment?');">Cancel</a>
+                                   onclick="return confirm('Delete this appointment?');">Delete</a>
                             </td>
                         </tr>
                     <% } %>

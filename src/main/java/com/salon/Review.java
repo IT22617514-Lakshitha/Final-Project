@@ -1,9 +1,6 @@
 package com.salon;
 
-/**
- * Review model - customer review for a service.
- * Stored in reviews.txt as: id,username,service,rating,comment
- */
+
 public class Review {
 
     private String id;

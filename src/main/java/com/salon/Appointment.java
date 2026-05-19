@@ -1,9 +1,6 @@
 package com.salon;
 
-/**
- * Appointment model - encapsulated fields with getters/setters.
- * Stored in appointments.txt as: id,username,service,date,time,status
- */
+
 public class Appointment {
 
     private String id;

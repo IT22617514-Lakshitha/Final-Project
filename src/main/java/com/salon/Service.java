@@ -1,9 +1,6 @@
 package com.salon;
 
-/**
- * Service model - represents a salon service (haircut, facial, etc.).
- * Stored in services.txt as: id,name,price,duration
- */
+
 public class Service {
 
     private String id;

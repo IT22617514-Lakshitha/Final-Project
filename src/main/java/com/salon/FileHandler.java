@@ -4,14 +4,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Centralized text-file CRUD utility using FileReader / BufferedReader
- * and FileWriter / BufferedWriter as required.
- *
- * Files live under <Tomcat-working-dir>/data/ when accessed by relative path,
- * or use an absolute path passed in by callers. For simplicity each servlet
- * calls FileHandler.dataDir(context) so files end up beside the deployed app.
- */
+
 public class FileHandler {
 
     /** Resolve absolute path of the data directory. Creates it if missing. */

@@ -1,9 +1,6 @@
 package com.salon;
 
-/**
- * Customer class - demonstrates ENCAPSULATION (private fields + getters/setters)
- * and INHERITANCE (extends abstract Person class below).
- */
+
 public class Customer extends Person {
 
     // Encapsulated fields
@@ -31,7 +28,7 @@ public class Customer extends Person {
     public String getPhone() { return phone; }
     public void setPhone(String phone) { this.phone = phone; }
 
-    /** POLYMORPHISM - overrides abstract method from Person */
+    // POLYMORPHISM - overrides abstract method from Person
     @Override
     public String getRole() {
         return "CUSTOMER";
@@ -50,10 +47,8 @@ public class Customer extends Person {
     }
 }
 
-/**
- * ABSTRACTION - abstract base class. Cannot be instantiated.
- * Demonstrates INHERITANCE - Customer extends Person.
- */
+//ABSTRACTION - abstract base class. Cannot be instantiated.
+
 abstract class Person {
     private String name;
     private String email;
@@ -69,7 +64,7 @@ abstract class Person {
     public String getEmail() { return email; }
     public void setEmail(String email) { this.email = email; }
 
-    /** Abstract method - must be implemented by subclasses (POLYMORPHISM) */
+    // Abstract method
     public abstract String getRole();
 }
 

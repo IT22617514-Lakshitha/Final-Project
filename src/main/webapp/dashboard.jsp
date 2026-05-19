@@ -56,7 +56,7 @@
             <a class="text-decoration-none" href="appointments.jsp">
                 <div class="card tile shadow-sm border-0 p-4 text-center">
                     <h5>📋 My Appointments</h5>
-                    <p class="text-muted small mb-0">View / Update / Cancel</p>
+                    <p class="text-muted small mb-0">View / Update / Delete</p>
                 </div>
             </a>
         </div>
