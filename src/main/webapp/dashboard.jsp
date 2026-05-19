@@ -76,6 +76,12 @@
                 </div>
             </a>
         </div>
+        </div>
+        <div class="col-md-12 mt-4 text-center">
+            <hr>
+            <h5 class="text-danger mb-3">Danger Zone</h5>
+            <a href="DeleteAccountServlet" class="btn btn-outline-danger" onclick="return confirm('Are you sure you want to permanently delete your account? This action cannot be undone and will delete all your appointments and reviews.');">Delete My Account</a>
+        </div>
         <% } else { %>
         <div class="col-md-3">
             <a class="text-decoration-none" href="users.jsp">
