@@ -5,12 +5,12 @@ public class Service {
 
     private String id;
     private String name;
-    private double price;
+    private int price;
     private String duration; // e.g., "30 min"
 
     public Service() {}
 
-    public Service(String id, String name, double price, String duration) {
+    public Service(String id, String name, int price, String duration) {
         this.id = id;
         this.name = name;
         this.price = price;
@@ -23,8 +23,8 @@ public class Service {
     public String getName() { return name; }
     public void setName(String name) { this.name = name; }
 
-    public double getPrice() { return price; }
-    public void setPrice(double price) { this.price = price; }
+    public int getPrice() { return price; }
+    public void setPrice(int price) { this.price = price; }
 
     public String getDuration() { return duration; }
     public void setDuration(String duration) { this.duration = duration; }
@@ -37,7 +37,7 @@ public class Service {
         String[] p = line.split(",", -1);
         if (p.length < 4) return null;
         try {
-            return new Service(p[0], p[1], Double.parseDouble(p[2]), p[3]);
+            return new Service(p[0], p[1], Integer.parseInt(p[2]), p[3]);
         } catch (NumberFormatException e) {
             return null;
         }

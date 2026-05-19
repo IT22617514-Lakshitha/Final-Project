@@ -1,2 +1,0 @@
-1700000000020,alice,Hair Cut,5,Loved my new hairstyle!
-1700000000021,bob,Facial,4,Very relaxing experience.

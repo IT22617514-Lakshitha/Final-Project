@@ -1,2 +1,4 @@
-alice,alice123,Alice Perera,alice@mail.com,0771112222
-bob,bob123,Bob Silva,bob@mail.com,0773334444
+kasun,kasun123,Kasun Perera,kasun@email.com,0771234567
+nimali,nimali123,Nimali Silva,nimali@email.com,0719876543
+chaminda,chaminda123,Chaminda Bandara,chaminda@email.com,0751122334
+amal,amal123,Amal Fernando,amal@email.com,0789988776

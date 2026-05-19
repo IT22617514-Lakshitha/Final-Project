@@ -1,2 +1,3 @@
-1700000000020,alice,Hair Cut,5,Loved my new hairstyle!
-1700000000021,bob,Facial,4,Very relaxing experience.
+1700000000020,kasun,Hair Cut,5,Excellent service highly recommended
+1700000000021,nimali,Facial,4,Good but a bit expensive
+1700000000022,chaminda,Hair Coloring,5,Loved the new color!

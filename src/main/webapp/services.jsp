@@ -16,7 +16,7 @@
             if (name != null && price != null && duration != null
                     && !name.isEmpty() && !price.isEmpty()) {
                 try {
-                    Service s = new Service(FileHandler.newId(), name, Double.parseDouble(price), duration);
+                    Service s = new Service(FileHandler.newId(), name, Integer.parseInt(price), duration);
                     FileHandler.appendLine(path, s.toFileString());
                     msg = "Service added.";
                 } catch (NumberFormatException e) { msg = "Invalid price."; }
@@ -34,7 +34,7 @@
             String duration = request.getParameter("duration");
             if (id != null && name != null && price != null) {
                 try {
-                    Service s = new Service(id, name, Double.parseDouble(price), duration);
+                    Service s = new Service(id, name, Integer.parseInt(price), duration);
                     FileHandler.updateById(path, id, s.toFileString());
                     msg = "Service updated.";
                 } catch (NumberFormatException e) { msg = "Invalid price."; }
@@ -98,7 +98,7 @@
                            value="<%= editing != null ? editing.getName() : "" %>" required>
                 </div>
                 <div class="col-md-3">
-                    <input type="number" step="0.01" name="price" class="form-control" placeholder="Price"
+                    <input type="number" step="1" name="price" class="form-control" placeholder="Price"
                            value="<%= editing != null ? editing.getPrice() : "" %>" required>
                 </div>
                 <div class="col-md-3">
@@ -124,7 +124,7 @@
                 <div class="card-body">
                     <h5><%= s.getName() %></h5>
                     <p class="text-muted mb-1">Duration: <%= s.getDuration() %></p>
-                    <h4 class="text-danger">$<%= s.getPrice() %></h4>
+                    <h4 class="text-danger">Rs. <%= s.getPrice() %></h4>
                     <% if (isAdmin) { %>
                         <a class="btn btn-sm btn-warning" href="services.jsp?edit=<%= s.getId() %>">Edit</a>
                         <a class="btn btn-sm btn-danger"

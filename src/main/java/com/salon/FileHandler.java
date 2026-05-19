@@ -9,14 +9,7 @@ public class FileHandler {
 
     /** Resolve absolute path of the data directory. Creates it if missing. */
     public static String dataDir(String contextRealPath) {
-        // Place data folder at the project root if running in IntelliJ,
-        // or under <webapp>/data when deployed.
-        File dir;
-        if (contextRealPath != null) {
-            dir = new File(contextRealPath, "data");
-        } else {
-            dir = new File("data");
-        }
+        File dir = new File("C:\\Users\\Shan\\Desktop\\oop final\\New folder (2)\\data");
         if (!dir.exists()) dir.mkdirs();
         return dir.getAbsolutePath();
     }

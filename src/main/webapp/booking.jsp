@@ -46,7 +46,7 @@
                                         Service s = Service.fromFileString(l);
                                         if (s == null) continue;
                                 %>
-                                    <option value="<%= s.getName() %>"><%= s.getName() %> ($<%= s.getPrice() %>)</option>
+                                    <option value="<%= s.getName() %>"><%= s.getName() %> (Rs. <%= s.getPrice() %>)</option>
                                 <% } %>
                             </select>
                         </div>
