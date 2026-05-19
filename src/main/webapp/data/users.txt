@@ -1,0 +1,2 @@
+alice,alice123,Alice Perera,alice@mail.com,0771112222
+bob,bob123,Bob Silva,bob@mail.com,0773334444

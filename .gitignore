@@ -1,0 +1,12 @@
+target/
+.idea/
+*.iml
+out/
+*.log
+.classpath
+.project
+.settings/
+apache-tomcat-10.1.18/
+apache-maven-3.9.6/
+maven.zip
+tomcat.zip
