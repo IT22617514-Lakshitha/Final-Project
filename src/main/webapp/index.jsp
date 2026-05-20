@@ -68,7 +68,7 @@
 </section>
 
 <footer class="bg-white text-center py-3 border-top">
-    <small class="text-muted">© <%= java.time.Year.now() %> Glamour Beauty Salon</small>
+    <small class="text-muted">© <Glamour Beauty Salon</small>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

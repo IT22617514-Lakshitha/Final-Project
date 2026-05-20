@@ -10,9 +10,9 @@ public class Appointment {
     private String time;   // HH:mm
     private String status; // BOOKED / CANCELLED / COMPLETED
 
-    public Appointment() {}
+    public Appointment() {} //dc
 
-    public Appointment(String id, String username, String service,
+    public Appointment(String id, String username, String service, //pc
                        String date, String time, String status) {
         this.id = id;
         this.username = username;
@@ -40,7 +40,7 @@ public class Appointment {
     public String getStatus() { return status; }
     public void setStatus(String status) { this.status = status; }
 
-    public String toFileString() {
+    public String toFileString() {                                      //converting to csv
         return id + "," + username + "," + service + "," + date + "," + time + "," + status;
     }
 
